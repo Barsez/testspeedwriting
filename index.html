@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Writing Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    
+    <div class="someTextWrapper">
+
+        <div class="btnTextWrapper">
+            <button id="changeText" title="другой текст"><span class="change_text_title">other text</span></button>
+            <div class="btnLangwrapper">
+                <button id="engText" title="Английский язык">eng</button>
+                <button id="ruText" title="Русский язык">ru</button>
+            </div>
+        </div>
+        <div class="timeWrapper">
+            <p class="time" title="Время"><span class="time_title">Time: </span><span id="timer">0</span></p>
+
+            <!-- <input type="text" class="setTime" placeholder="задать время"> -->
+            
+        </div>
+
+        <div id="someText"></div>
+
+        <div class="inputWrapper">
+            <input type="text" autocomplete="disabled" id="inputText" disabled>
+        </div>
+        <div class="btnStartWrapper">
+            <input type="button" title="Жми cюда для начала или ENTER" value="START/enter" class="btnStart">
+            <input type="button" title="Сброс (перезагрузка)" value="rest" class="btnRestart" style="display: none;">
+            <div class="newRecordWrapper">
+                <p id="newRecord"></p>
+                <p id="comment"></p>
+            </div>
+            <h1 class="notMobile">NOT FOR MOBILE</h1>
+        </div>
+        
+        <div class="totalWrapper">
+            <p title="Количество правильных"><span class="right_title">Right: </span><span id="totalWright">0</span></p>
+            <p title="Количество неправильных"><span  class="wrong_title">Wrong: </span><span id="Wrong">0</span></p>
+            <p title="Всего ошибок"><span class="total_wrong_title">Total wrong: </span><span id="totalWrong" style="color: red;">0</span></p>
+            
+        </div>
+        <div class="recordWrapper">
+            <p title="Рекордное количество"><span class="record_title">Record: </span>
+                <span id="record"></span>
+            </p>
+        </div>
+
+        <div class="change_bg_wrapper">
+            <button class="change_bg" id="change_bg" title="Сменить фон">Change BG</button>
+        </div>
+
+
+
+
+
+
+        <br><br><br><button class="clearStorage" title="Очистить хранилище (сброс результатов)" style="font-size: 16px;" ><span class="clear_store_title">Clear Store </span><span style="color: red;"><b>X</b></span></button>
+    </div>
+
+
+
+    <script src="js/variable.js"></script>
+    <script  src="js/arrayTexts.js"></script>
+    <script  src="js/localStorage.js"></script>
+    
+    <script  src="js/index.js"></script>
+    
+    
+</body>
+
+</html>
